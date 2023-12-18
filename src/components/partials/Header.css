@@ -1,7 +1,8 @@
 header {
   width: auto;
   color: black;
-  background-color: rgb(252, 247, 247);
+  /* background-color: rgb(252, 247, 247); */
+  background-color: white; 
   height: 110px;
 }
 

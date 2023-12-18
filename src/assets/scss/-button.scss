@@ -1,0 +1,59 @@
+.btn {
+  @apply px-3 py-3  cursor-pointer text-xl font-semibold rounded-lg
+  }
+
+  .btn.btn-text {
+    @apply bg-white text-sky-700
+   }
+
+ .btn.btn-contained { 
+  @apply bg-sky-700 text-white 
+ }
+
+
+ .btn.btn-outlined {
+  @apply bg-white text-sky-700 border border-sky-700 
+ }
+
+ .btn.btn-secondry {
+  @apply bg-white text-red-600 
+ }
+
+ .btn.btn-success { 
+  @apply bg-green-600 text-white  
+ }
+
+ .btn.btn-error {
+  @apply bg-white text-red-600 border border-red-600 
+ }
+
+
+ .btn.btn-warning { 
+  @apply bg-yellow-400 text-black  
+ }
+ 
+
+ .btn.btn-disabled {
+  @apply  bg-gray-300 rounded-lg text-gray-700
+ }
+
+ .btn.btn-dark {
+  @apply bg-black text-white px-10
+ }
+
+
+.btn.btn-small
+{
+ @apply py-1 px-4 bg-white rounded-lg text-blue-600 border border-blue-500 font-semibold text-lg
+}
+
+
+.btn.btn-medium 
+{
+  @apply py-2 px-6 bg-white rounded-lg text-blue-600 border border-blue-500 font-semibold text-lg
+}
+
+.btn.btn-large
+{
+  @apply py-3 px-8 bg-white rounded-lg text-blue-600 border border-blue-500 font-semibold text-lg
+}
