@@ -20,15 +20,14 @@ const CardSection = () => {
 <h1 className='font-bold text-3xl p-4 line-clamp-1 cursor-pointer'>Card</h1>
 </div>
 
-
-    <div className='flex flex-wrap m-6 justify-center md:justify-between'>
-    <Card className='card ml-5 bg-black text-white space-y-2 '
+    <div className='grid justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-4  gap-y-4'>
+    <Card className='card ml-5 bg-black text-white space-y-2  '
     title= 'Card Title'
     img={<Image src={card1} />}
     subTitle= 'subTitle This is a sample card component with React, CSS, and Tailwind CSS'
     btn ={<Button 
       onclick={handleClick}
-      className='btn btn-small'> Button </Button>}
+      className='btn btn-contained'> Button </Button>}
      />
 
 <Card className='card ml-5 bg-black text-white space-y-2 '
@@ -37,7 +36,7 @@ const CardSection = () => {
     subTitle= ' subTitle This is a sample card component with React, CSS, and Tailwind CSS'
     btn ={<Button
       onclick={handleClick}
-       className='btn btn-small'> Button </Button>}
+       className='btn btn-text '> Button </Button>}
      />
 
       
@@ -47,7 +46,7 @@ const CardSection = () => {
      subTitle= 'SubTitle This is a sample card component with React, CSS, and Tailwind CSS'
      btn ={<Button
       onclick={handleClick}
-       className='btn btn-contained'> Button </Button>}
+       className='btn btn-secondry'> Button </Button>}
 
       />
       
@@ -57,7 +56,7 @@ const CardSection = () => {
      subTitle= 'SubTitle This is a sample card component with React, CSS, and Tailwind CSS'
      btn ={<Button
       onclick={handleClick} 
-        className='btn btn-contained'> Button </Button>}
+        className='btn btn-warning'> Button </Button>}
 
       />
       </div>
