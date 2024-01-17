@@ -82,7 +82,7 @@ const StepsTest = () => {
 <div>
  
 
-    <div className="max-w-md mx-10 my-10 ">
+    <div className="max-w-md mx-auto my-10">
     <div className="flex z-[5] items-center relative justify-center md:mx-8 pb-12"  >
             {steps.map((item, i) => (
               <div
