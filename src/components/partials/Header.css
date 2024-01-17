@@ -1,9 +1,7 @@
 header {
-  width: auto;
+  width: 100%;
   color: white;
-  /* background-color: rgb(252, 247, 247); */
-  /* background-color: rgb(53, 53, 60);  */
-  /* background-color: rgb(54, 54, 54);  */
+
   background-color: #0b0c15; 
   height: 110px;
 }

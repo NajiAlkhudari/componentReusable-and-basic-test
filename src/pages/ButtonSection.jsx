@@ -8,11 +8,11 @@ const ButtonSection = () => {
   return (
     <>
 <div class=" text-white bg-gradient-to-r from-pink-950 ... h-20">
-<h1 className='font-bold text-3xl p-4 line-clamp-1 cursor-pointer '>Button</h1>
+<h1 className=' font-bold text-3xl p-4 line-clamp-1 cursor-pointer '>Button</h1>
 </div>
 
 <div className='flex flex-col items-center '>
-    <div className='p-10  space-x-6 '>
+    <div className='flex p-10  space-x-6 '>
    
     <Button className='btn btn-text'
           onClick={handleClick}
@@ -38,7 +38,7 @@ Contained
         </div>
     
     
-    <div className='p-10  space-x-6   '>
+    <div className='flex p-10  space-x-6   '>
     
     
     
@@ -65,7 +65,7 @@ Contained
     
           
         </div>
-        <div className='p-10  space-x-6 '>
+        <div className='flex p-10  space-x-6 '>
     
         <Button className= "btn btn-warning"
           onClick={handleClick}
@@ -91,7 +91,7 @@ Contained
     </div>
     
     
-            <div className='p-10 m-4 flex space-x-4 '>
+            <div className='flex p-10 m-4  space-x-4 '>
               <div> <Button className= "btn btn-small"
           onClick={handleClick}
           >

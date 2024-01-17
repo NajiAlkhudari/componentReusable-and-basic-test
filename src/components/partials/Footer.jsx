@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className='footer flex  flex-col items-center   '>
+    <div className='footer flex  flex-col items-center  w-full  '>
       <div className='flex'>  <span className="text-black">@2024 </span>
         <span className="text-sky-700">Naji Alkhudari</span></div>
       
