@@ -7,29 +7,29 @@ const ButtonSection = () => {
       }
   return (
     <>
-<div class="bg-gradient-to-r from-indigo-500 ... h-16">
+<div class=" text-white bg-gradient-to-r from-pink-950 ... h-20">
 <h1 className='font-bold text-3xl p-4 line-clamp-1 cursor-pointer '>Button</h1>
 </div>
 
-    <div className='p-10 flex space-x-6  m-10 '>
+<div className='flex flex-col items-center '>
+    <div className='p-10  space-x-6 '>
    
-    
     <Button className='btn btn-text'
-          onclick={handleClick}
+          onClick={handleClick}
           >
             TEXT  
       
             </Button>
        
             <Button className='btn btn-contained'
-                      onclick={handleClick}
+                      onClick={handleClick}
 
             >
 Contained
             </Button>
     
             <Button className= 'btn btn-outlined'
-          onclick={handleClick}
+          onClick={handleClick}
           >
             Outlined
       
@@ -38,26 +38,26 @@ Contained
         </div>
     
     
-    <div className='p-10 flex space-x-6 m-10 '>
+    <div className='p-10  space-x-6   '>
     
     
     
     <Button className= "btn btn-secondry"
-          onclick={handleClick}
+          onClick={handleClick}
           >
             Secondary
       
             </Button>
     
           <Button className= "btn btn-success"
-          onclick={handleClick}
+          onClick={handleClick}
           >
             Success
       
             </Button>
     
             <Button className= "btn btn-error"
-          onclick={handleClick}
+          onClick={handleClick}
           >
             Error
       
@@ -65,17 +65,17 @@ Contained
     
           
         </div>
-        <div className='p-10 flex space-x-6 '>
+        <div className='p-10  space-x-6 '>
     
         <Button className= "btn btn-warning"
-          onclick={handleClick}
+          onClick={handleClick}
           >
             Warning
       
             </Button>
     
             <Button className= " btn btn-disabled"
-                  onclick={handleClick}
+                  onClick={handleClick}
                   disable= {true}
     
           >
@@ -83,7 +83,7 @@ Contained
             </Button>
     
             <Button className= "btn btn-dark"
-          onclick={handleClick}
+          onClick={handleClick}
           >
             Dark
       
@@ -93,7 +93,7 @@ Contained
     
             <div className='p-10 m-4 flex space-x-4 '>
               <div> <Button className= "btn btn-small"
-          onclick={handleClick}
+          onClick={handleClick}
           >
             SMALL
       
@@ -106,12 +106,12 @@ Contained
             </Button></div>
           
           <div><Button className= "btn btn-large"
-          onclick={handleClick}
+          onClick={handleClick}
           >
             LARGE
       
             </Button>
-
+            </div>
             </div>
             </div>
         

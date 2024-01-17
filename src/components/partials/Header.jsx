@@ -1,37 +1,74 @@
-import React from 'react'
-import './Header.css'
-import naji from './../../assets/images/naji.jpg'; 
+import React, { useState , useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
+import Cookies from 'js-cookie';import './Header.css'
+import naji from './../../assets/images/naji.jpg';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
-
+import Button from '../ui/Button';
+import { MdLanguage } from "react-icons/md";
 
 const Header = () => {
-  return (
-    <header className='header '>
-      <div className='flex items-center justify-between p-4 cursor-pointer '>
-        <div className='flex items-center space-x-4 pl-4'>
-          <img className='rounded-2xl opacity-90' src={naji} alt="logo" role="icon" width="80" height="100"  />
-        <h1 className='font-bold '>
-        <Link to="/" className='text-black hover:text-sky-600'>
+  const { t, i18n } = useTranslation();
+  const [lang, setLang] = useState(Cookies.get('lang') || 'en');
 
-          Mohamad Naji Alkhudari
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setLang(lng);
+    Cookies.set('lang', lng);
+  };
+
+  useEffect(() => {
+    const cookieLang = Cookies.get('lang');
+    if (cookieLang) {
+      changeLanguage(cookieLang);
+    }
+  }, []);
+
+  return (
+    <div className="App" style={{ direction: lang === 'ar' ? 'rtl' : 'ltr' }}>
+
+    <header className='header '>
+      <div className='flex items-center pt-5 justify-between  cursor-pointer '>
+        <div className='flex items-center  '>
+          <img className='rounded-2xl opacity-90' src={naji} alt="logo" role="icon" width="80" height="100"  />
+        {/* <h1 className='font-bold px-4 '>
+        <Link to="/" className='text-white hover:text-sky-600'>
+
+          {t("Mohamad Naji Alkhudari")}
           </Link>
-          </h1>
+          </h1> */}
         </div>
-        <ul className='flex space-x-4 font-semibold pr-10 '>
-        <Link to="component" className='text-black hover:text-sky-600'>
-    Docs
-  </Link>            <Link to="component" className='text-black hover:text-sky-600'>
-    Components
-  </Link>          <li className='text-black hover:text-sky-600'>About</li>
-          <li className='text-black hover:text-sky-600'>
+        <ul className='flex  font-semibold '>
+          <li className='px-2'>     <Link to="/" className='text-white  hover:text-sky-600'>
+    {t("Home")}
+  </Link>  </li>
+
+    <li className='px-2'>        <Link to="component" className='text-white  hover:text-sky-600'>
+    {t("Components")}
+  </Link>  </li>
+           <li className='px-2'>
+    {t("About")}
+    </li>
+
+          <li className='text-white hover:text-sky-600'>
           <a href="https://github.com/NajiAlkhudari">
           <Icon icon="mdi:github" width="50" height="30"/>
           </a>
           </li>
+          <li className='px-2'>
+                   <Button className='btn btn-lang  px-4 py-1' onClick={() => changeLanguage(lang === 'en' ? 'ar' : 'en')}>
+                   {lang === 'en' ? 'Ar' : ' En'}
+                   {/* <MdLanguage /> */}
+
+
+        </Button></li>
+        
         </ul>
       </div>
     </header>
+    </div>
 
   )
 }

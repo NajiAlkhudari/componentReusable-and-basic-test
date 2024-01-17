@@ -2,4 +2,8 @@
     position: relative;
     bottom: 0;
     width: 100%;
+    padding: 10px;
+    background: #a1a1a1;
+    height: max-content;
+  
   }
