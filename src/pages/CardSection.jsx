@@ -18,7 +18,7 @@ const CardSection = () => {
 <h1 className='font-bold text-3xl p-4 line-clamp-1 cursor-pointer'>Card</h1>
 </div>
 
-   <div className='grid justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-4  gap-y-4'>
+   <div className=' grid justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-4  gap-y-4'>
    <Card className='card ml-5 bg-black text-white space-y-2'>
     <Card.Title>Card Title </Card.Title>
     <Card.Image src={card1}></Card.Image>

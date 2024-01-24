@@ -6,10 +6,6 @@ const Accordion = ({ title, children }) => {
 
   return (
       <div className=" xl:mx-96  flex flex-col border rounded-md overflow-x-hidden bg-white ">
-
-
-        
-    
         <button
           className="  "
           onClick={() => setIsOpen(!isOpen)}

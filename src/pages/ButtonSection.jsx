@@ -11,7 +11,7 @@ const ButtonSection = () => {
 <h1 className=' font-bold text-3xl p-4 line-clamp-1 cursor-pointer '>Button</h1>
 </div>
 
-<div className='flex flex-col items-center '>
+<div className='flex flex-col items-center bg-white'>
     <div className='flex p-10  space-x-6 '>
    
     <Button className='btn btn-text'

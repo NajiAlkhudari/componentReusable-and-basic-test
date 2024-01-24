@@ -79,7 +79,11 @@ const StepsTest = () => {
     setStepNumber(stepNumber - 1);
   };
   return (
-<div>
+    <>
+
+<div class=" text-white bg-gradient-to-r from-pink-950 ... h-20">
+    <h1 className='font-bold text-3xl p-4 line-clamp-1 cursor-pointer '>Wizard</h1>
+    </div>
  
 
     <div className="max-w-md mx-auto my-10">
@@ -186,7 +190,8 @@ const StepsTest = () => {
               </div>
 </form>      
     </div>
-    </div>
+
+   </>
   )
 }
 

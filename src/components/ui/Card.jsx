@@ -20,9 +20,3 @@ Card.Button=Button;
 
 export default Card;
 
-
-// <div className='card title' >{title}</div>
-// <div>{img}</div>
-// <p className="card subtitle">{subTitle}</p>
-// <div>{btn}</div>
-// { className, title, subTitle ,  img ,btn}

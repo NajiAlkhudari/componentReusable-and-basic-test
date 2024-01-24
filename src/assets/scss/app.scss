@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 
+@layer components {
 
 @import '-button.scss' ;
-@import '-card.scss';
 @import '-accrodion.scss';
 @import '-textinput.scss';
+}
+
+@layer utilities {
+}
