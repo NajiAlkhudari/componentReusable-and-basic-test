@@ -5,6 +5,7 @@ import AccordionSection from './AccordionSection';
 import StepsTest from '../components/ui/wizard/StepsTest';
 
 import AlertSection from './AlertSection';
+import AvatarSection from './AvatarSection';
 
 
 const Component = () => {
@@ -16,6 +17,11 @@ const Component = () => {
  <AccordionSection />
  <AlertSection />
  <StepsTest />
+ <AvatarSection />
+
+
+
+
 
 
 
