@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from '../components/ui/Button'
+import { IoMdSend } from "react-icons/io";
+import { MdDelete } from "react-icons/md";
 
 const ButtonSection = () => {
     const handleClick = ()=>{
@@ -13,19 +15,25 @@ const ButtonSection = () => {
 
 <div className='flex flex-col items-center bg-white'>
     <div className='flex p-10  space-x-6 '>
-   
-    <Button className='btn btn-text'
+   <div>
+     <Button className='btn btn-text'
           onClick={handleClick}
           >
-            TEXT  
-      
-            </Button>
+
+            TEXT 
+          
+            </Button>   
+</div>
+   
+        
        
             <Button className='btn btn-contained'
                       onClick={handleClick}
+                      Icon={IoMdSend}
+                      iconPosition="right"
 
             >
-Contained
+Send
             </Button>
     
             <Button className= 'btn btn-outlined'
@@ -58,8 +66,10 @@ Contained
     
             <Button className= "btn btn-error"
           onClick={handleClick}
+          Icon={MdDelete}
+          iconPosition='left'
           >
-            Error
+            Delete
       
             </Button>
     

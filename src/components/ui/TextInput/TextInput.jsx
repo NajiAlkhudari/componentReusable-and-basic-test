@@ -22,7 +22,8 @@ const TextInput = ({
          placeholder={placeholder}
          type={type}
          name={name}
-         {...register(name)}
+        //  {...register(name)}
+         {...(register ? register(name) : {})}
       />
         
       {error && (

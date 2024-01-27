@@ -175,17 +175,19 @@ const StepsTest = () => {
               >
                 {stepNumber !== 0 && (
                   <Button
-                    text="prev"
                     className="btn btn-warning px-6"
                     onClick={handlePrev}
-                  />
+                  >
+                    prev
+                    </Button>
                
                 )}
                 <Button
-                  text={stepNumber !== steps.length - 1 ? "next" : "submit"}
-                  className="btn btn-warning px-6"
+                    className="btn btn-warning px-6"
                   type="submit"
-              />
+              >
+{stepNumber !== steps.length - 1 ? "next" : "submit"}
+                </Button>
               
               </div>
 </form>      
