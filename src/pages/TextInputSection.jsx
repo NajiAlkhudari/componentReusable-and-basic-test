@@ -4,10 +4,19 @@ import TextInput from '../components/ui/TextInput/TextInput'
 const TextInputSection = () => {
   return (
   <>
-  <div class=" text-white bg-gradient-to-r from-pink-950 ... h-20 ">
-<h1 className='font-bold text-3xl p-4 line-clamp-1 cursor-pointer'>Text Input</h1>
-</div>
-<div className=' grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 p-4 bg-white'>
+ 
+ <div className= 'py-16 grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  justify-between  items-center  bg-white '>
+<div className='xl:px-16'>
+              <h1 className='text-sky-700 text-7xl font-bold font-serif'>
+              TextInput  
+              </h1>
+              <h1 className='text-sky-700 text-7xl font-bold font-serif'>
+              Component 
+              </h1>
+
+  </div>
+
+<div className=' py-10  grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 p-4 bg-white'>
     <div>  
           <TextInput 
                className="bg-gray-100 text-gray-600 mt-1 block py-2 px-3 border  border-gray-700 rounded-md  focus:outline-none  focus:border-sky-700 "  
@@ -57,6 +66,7 @@ const TextInputSection = () => {
     />
 </div>
          
+</div>
 </div>
   </>
   )

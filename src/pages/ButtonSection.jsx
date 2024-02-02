@@ -9,13 +9,22 @@ const ButtonSection = () => {
       }
   return (
     <>
-<div class=" text-white bg-gradient-to-r from-pink-950 ... h-20">
-<h1 className=' font-bold text-3xl p-4 line-clamp-1 cursor-pointer '>Button</h1>
-</div>
 
-<div className='flex flex-col items-center bg-white'>
-    <div className='flex p-10  space-x-6 '>
-   <div>
+<div className= 'pt-8 grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  justify-between items-center  bg-white '>
+
+<div className='xl:px-16'>
+              <h1 className='text-sky-700 text-7xl font-bold font-serif'>
+              Button  
+              </h1>
+              <h1 className='text-sky-700 text-7xl font-bold font-serif'>
+              Component 
+              </h1>
+
+  </div>
+<div className='xl:px-16'>
+
+    <div className='flex py-10  space-x-6 '>
+   <div>            
      <Button className='btn btn-text'
           onClick={handleClick}
           >
@@ -46,7 +55,7 @@ Send
         </div>
     
     
-    <div className='flex p-10  space-x-6   '>
+    <div className='flex py-10  space-x-6   '>
     
     
     
@@ -75,7 +84,7 @@ Send
     
           
         </div>
-        <div className='flex p-10  space-x-6 '>
+        <div className='flex py-10  space-x-6 '>
     
         <Button className= "btn btn-warning"
           onClick={handleClick}
@@ -101,7 +110,7 @@ Send
     </div>
     
     
-            <div className='flex p-10 m-4  space-x-4 '>
+            <div className='flex py-10 m-4  space-x-4 '>
               <div> <Button className= "btn btn-small"
           onClick={handleClick}
           >
@@ -124,8 +133,8 @@ Send
             </div>
             </div>
             </div>
-        
-  
+ 
+            </div>
     </>
   )
 }

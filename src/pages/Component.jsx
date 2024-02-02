@@ -7,6 +7,7 @@ import StepsTest from '../components/ui/wizard/StepsTest';
 import AlertSection from './AlertSection';
 import AvatarSection from './AvatarSection';
 import TextInputSection from './TextInputSection';
+import SelectSection from './SelectSection';
 
 
 const Component = () => {
@@ -20,6 +21,7 @@ const Component = () => {
  <StepsTest />
  <AvatarSection />
  <TextInputSection />
+ <SelectSection />
 
 
 

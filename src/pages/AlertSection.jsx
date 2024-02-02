@@ -5,10 +5,19 @@ import { FaRegCheckCircle } from "react-icons/fa";
 const AlertSection = () => {
   return (
     <>
-    <div class=" text-white bg-gradient-to-r from-pink-950 ... h-20 ">
-    <h1 className='font-bold text-3xl p-4 line-clamp-1 cursor-pointer'>Alert</h1>
-    </div>
-     <div className='flex flex-col md:px-36 lg:px-52  xl:px-72   bg-white space-y-10 '> 
+   
+   <div className= 'py-10 grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  justify-between  items-center  bg-gray-900 '>
+<div className='xl:px-16'>
+              <h1 className='text-gray-200 text-7xl font-bold font-serif'>
+              Alert  
+              </h1>
+              <h1 className='text-gray-200 text-7xl font-bold font-serif'>
+              Component 
+              </h1>
+
+  </div>
+
+     <div className='flex flex-col md:px-36 lg:px-52  xl:px-20    space-y-10 '> 
     
             <Alert type="success" showButton={true}>
             <div className='flex items-center '>
@@ -39,6 +48,7 @@ const AlertSection = () => {
     
               </div>        </Alert>
             
+          </div>
           </div>
           </>
   )

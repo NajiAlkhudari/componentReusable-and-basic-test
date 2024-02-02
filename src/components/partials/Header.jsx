@@ -33,26 +33,21 @@ const Header = () => {
       <div className='flex items-center pt-5 justify-between  cursor-pointer '>
         <div className='flex items-center  '>
           <img className='rounded-2xl opacity-90' src={naji} alt="logo" role="icon" width="80" height="100"  />
-        {/* <h1 className='font-bold px-4 '>
-        <Link to="/" className='text-white hover:text-sky-600'>
-
-          {t("Mohamad Naji Alkhudari")}
-          </Link>
-          </h1> */}
+     
         </div>
         <ul className='flex  font-semibold '>
-          <li className='px-2'>     <Link to="/" className='text-white  hover:text-sky-600'>
+          <li className='px-2'>     <Link to="/" className='  hover:text-sky-600'>
     {t("Home")}
   </Link>  </li>
 
-    <li className='px-2'>        <Link to="component" className='text-white  hover:text-sky-600'>
+    <li className='px-2'>        <Link to="component" className='  hover:text-sky-600'>
     {t("Components")}
   </Link>  </li>
            <li className='px-2'>
     {t("About")}
     </li>
 
-          <li className='text-white hover:text-sky-600'>
+          <li className=' hover:text-sky-600'>
           <a href="https://github.com/NajiAlkhudari">
           <Icon icon="mdi:github" width="50" height="30"/>
           </a>
@@ -60,7 +55,6 @@ const Header = () => {
           <li className='px-2'>
                    <Button className='btn btn-lang  px-4 py-1' onClick={() => changeLanguage(lang === 'en' ? 'ar' : 'en')}>
                    {lang === 'en' ? 'Ar' : ' En'}
-                   {/* <MdLanguage /> */}
 
 
         </Button></li>

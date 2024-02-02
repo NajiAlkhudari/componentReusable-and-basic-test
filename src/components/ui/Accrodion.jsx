@@ -5,13 +5,13 @@ const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-      <div className=" xl:mx-96  flex flex-col border rounded-md overflow-x-hidden bg-white ">
+      <div className="my-10  flex flex-col border rounded-md overflow-x-hidden bg-white ">
         <button
           className="  "
           onClick={() => setIsOpen(!isOpen)}
         >
-          <div className='flex   justify-between items-center px-6 py-2'>   <span className='font-medium  text-black '>{title}</span> 
-          <span className='text-black'>{isOpen ? <AiFillCaretDown /> : <AiFillCaretRight  />}</span></div>
+          <div className='flex   justify-between items-center px-6 py-2'>   <span className='font-medium  text-black hover:text-yellow-700 '>{title}</span> 
+          <span className='text-black '>{isOpen ? <AiFillCaretDown /> : <AiFillCaretRight  />}</span></div>
         
         </button>     
         {isOpen && (

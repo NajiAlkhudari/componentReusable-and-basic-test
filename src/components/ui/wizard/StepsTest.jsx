@@ -80,13 +80,18 @@ const StepsTest = () => {
   };
   return (
     <>
+<div className='pt-16 grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-1  justify-between items-center bg-gray-900 '>
 
-<div class=" text-white bg-gradient-to-r from-pink-950 ... h-20">
-    <h1 className='font-bold text-3xl p-4 line-clamp-1 cursor-pointer '>Wizard</h1>
-    </div>
+<div className=' '>
+              <h1 className='text-gray-200 text-7xl font-bold font-serif'>
+              Wizaed  Component
+              </h1>
+             
+
+  </div>
  
 
-    <div className="max-w-md mx-auto my-10">
+    <div className="  xl:px-96  my-10">
     <div className="flex z-[5] items-center relative justify-center md:mx-8 pb-12"  >
             {steps.map((item, i) => (
               <div
@@ -112,7 +117,7 @@ const StepsTest = () => {
                 <div
                   className={`${
                     stepNumber >= i
-                      ? "bg-slate-900 dark:bg-slate-900"
+                      ? "bg-slate-900 dark:bg-white"
                       : "bg-[#E0EAFF] dark:bg-slate-700"
                   } absolute top-1/2 h-[2px] w-full`}
                 ></div>
@@ -192,7 +197,7 @@ const StepsTest = () => {
               </div>
 </form>      
     </div>
-
+</div>
    </>
   )
 }

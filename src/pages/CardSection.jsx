@@ -14,9 +14,18 @@ const CardSection = () => {
   
   return (
     <>
-<div class=" text-white bg-gradient-to-r from-pink-950 ... h-20">
-<h1 className='font-bold text-3xl p-4 line-clamp-1 cursor-pointer'>Card</h1>
-</div>
+
+
+<div className='pt-16 grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-1  justify-between items-center bg-white '>
+
+<div className='xl:px-16 py-16 '>
+              <h1 className='text-sky-700 text-7xl font-bold font-serif'>
+              Card  Component
+              </h1>
+             
+
+  </div>
+ 
 
    <div className=' grid justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-4  gap-y-4'>
    <Card className='card ml-5 bg-black text-white space-y-2'>
@@ -58,7 +67,7 @@ const CardSection = () => {
       onclick={handleClick}
        className='btn btn-secondry'> Button </Card.Button>
    </Card>
-
+   </div>
 
        </div>
       </>
