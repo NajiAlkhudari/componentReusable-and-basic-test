@@ -38,8 +38,7 @@ const TextInputSection = () => {
                className="bg-gray-100 text-gray-600 mt-1 block py-2 px-3  border-b-2  border-gray-700 rounded-md  focus:outline-none  focus:border-sky-700 "  
                placeholder='Standard'
     />
-    </div>
-<div>
+ 
 
 <label htmlFor="" className='text-gray-700'>Password</label>
 <TextInput 
@@ -65,8 +64,7 @@ const TextInputSection = () => {
                type='number'
     />
 </div>
-         
-</div>
+</div>  
 </div>
   </>
   )
