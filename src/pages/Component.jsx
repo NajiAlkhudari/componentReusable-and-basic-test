@@ -14,7 +14,8 @@ const Component = () => {
 
   return (
   <>
-  <ButtonSection />
+  <div className=''>
+      <ButtonSection />
  <CardSection />
  <AccordionSection />
  <AlertSection />
@@ -22,11 +23,7 @@ const Component = () => {
  <AvatarSection />
  <TextInputSection />
  <SelectSection />
-
-
-
-
-
+ </div>
 
 
     </>

@@ -20,10 +20,10 @@ const SelectSection = () => {
     <>
  <div className= 'py-16 grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  justify-between  items-center  bg-white '>
 <div className='xl:px-16'>
-              <h1 className='text-sky-700 text-7xl font-bold font-serif'>
+              <h1 className='text-sky-700 text-6xl font-bold font-serif'>
               Select  
               </h1>
-              <h1 className='text-sky-700 text-7xl font-bold font-serif'>
+              <h1 className='text-sky-700 text-6xl font-bold font-serif'>
               Component 
               </h1>
 

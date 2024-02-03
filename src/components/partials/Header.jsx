@@ -30,7 +30,7 @@ const Header = () => {
     <div className="App" style={{ direction: lang === 'ar' ? 'rtl' : 'ltr' }}>
 
     <header className='header '>
-      <div className='flex items-center pt-5 justify-between  cursor-pointer '>
+      <div className='flex items-center p-5 justify-between  cursor-pointer '>
         <div className='flex items-center  '>
           <img className='rounded-2xl opacity-90' src={naji} alt="logo" role="icon" width="80" height="100"  />
      

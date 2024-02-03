@@ -83,7 +83,7 @@ const StepsTest = () => {
 <div className='pt-16 grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-1  justify-between items-center bg-gray-900 '>
 
 <div className=' '>
-              <h1 className='text-gray-200 text-7xl font-bold font-serif'>
+              <h1 className='text-gray-200 text-6xl font-bold font-serif'>
               Wizaed  Component
               </h1>
              

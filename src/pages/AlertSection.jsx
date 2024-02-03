@@ -8,10 +8,10 @@ const AlertSection = () => {
    
    <div className= 'py-10 grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  justify-between  items-center  bg-gray-900 '>
 <div className='xl:px-16'>
-              <h1 className='text-gray-200 text-7xl font-bold font-serif'>
+              <h1 className='text-gray-200 text-6xl font-bold font-serif'>
               Alert  
               </h1>
-              <h1 className='text-gray-200 text-7xl font-bold font-serif'>
+              <h1 className='text-gray-200 text-6xl font-bold font-serif'>
               Component 
               </h1>
 
