@@ -14,7 +14,7 @@ const AccordionSection = () => {
               </h1>
 
   </div>
-<div className='xl:px-16'>
+<div className='px-4 xl:px-16'>
 
     <div className='space-y-2 h-36 m-4'>
     <Accordion title="My custom from name " >

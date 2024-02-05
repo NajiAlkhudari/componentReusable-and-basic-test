@@ -8,6 +8,7 @@ import AlertSection from './AlertSection';
 import AvatarSection from './AvatarSection';
 import TextInputSection from './TextInputSection';
 import SelectSection from './SelectSection';
+import TabSection from './TabSection';
 
 
 const Component = () => {
@@ -23,6 +24,7 @@ const Component = () => {
  <AvatarSection />
  <TextInputSection />
  <SelectSection />
+ <TabSection />
  </div>
 
 
